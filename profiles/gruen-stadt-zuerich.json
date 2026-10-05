@@ -1,0 +1,82 @@
+{
+  "format": "polit-monitor-profile",
+  "schemaVersion": 1,
+  "hinweis": "Beispielprofil zum Ausprobieren und Anpassen. Laden über Einstellungen, «Profildatei laden». Stern am Ende = Wortanfang, mehrere Wörter = Phrase.",
+  "profile": {
+    "name": "Grün Stadt Zürich",
+    "orgTerms": [
+      "grün stadt zürich",
+      "tiefbau- und entsorgungsdepartement"
+    ],
+    "orgBonus": 15,
+    "themes": [
+      {
+        "label": "Bäume & Stadtklima",
+        "weight": 20,
+        "terms": [
+          "stadtbaum*",
+          "stadtbäume*",
+          "baumschutz*",
+          "baumbestand*",
+          "stadtklima*",
+          "hitzeminderung*",
+          "hitzeinsel*",
+          "entsiegelung*"
+        ]
+      },
+      {
+        "label": "Parks & Freiräume",
+        "weight": 10,
+        "terms": [
+          "parkanlage*",
+          "grünanlage*",
+          "grünfläche*",
+          "grünraum*",
+          "freiraum*",
+          "spielplatz*",
+          "friedhof*"
+        ]
+      },
+      {
+        "label": "Natur & Biodiversität",
+        "weight": 10,
+        "terms": [
+          "biodiversität*",
+          "naturschutz*",
+          "stadtnatur*",
+          "wald*",
+          "bachöffnung*"
+        ]
+      },
+      {
+        "label": "Gärten & Landwirtschaft",
+        "weight": 10,
+        "terms": [
+          "familiengarten*",
+          "familiengärten*",
+          "gemeinschaftsgarten*",
+          "urban gardening",
+          "stadtlandwirtschaft*"
+        ]
+      }
+    ],
+    "excludeTerms": [
+      "waldorf*"
+    ],
+    "commissionBonus": {
+      "names": [
+        "SK TED/DIB"
+      ],
+      "points": 15
+    },
+    "thresholds": {
+      "hit": 20,
+      "borderline": 10
+    },
+    "bodies": {
+      "261": true,
+      "ZH": true,
+      "CHE": false
+    }
+  }
+}

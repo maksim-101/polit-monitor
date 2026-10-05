@@ -1,0 +1,77 @@
+{
+  "format": "polit-monitor-profile",
+  "schemaVersion": 1,
+  "hinweis": "Beispielprofil zum Ausprobieren und Anpassen. Laden über Einstellungen, «Profildatei laden». Stern am Ende = Wortanfang, mehrere Wörter = Phrase.",
+  "profile": {
+    "name": "Dienstabteilung Verkehr",
+    "orgTerms": [
+      "dienstabteilung verkehr",
+      "sicherheitsdepartement"
+    ],
+    "orgBonus": 15,
+    "themes": [
+      {
+        "label": "Velo",
+        "weight": 10,
+        "terms": [
+          "velo*",
+          "veloroute*",
+          "velovorzugsroute*",
+          "velostreifen*",
+          "veloparkierung*"
+        ]
+      },
+      {
+        "label": "Fussverkehr & Sicherheit",
+        "weight": 10,
+        "terms": [
+          "fussverkehr*",
+          "fussgänger*",
+          "trottoir*",
+          "schulweg*",
+          "verkehrssicherheit*",
+          "tempo 30",
+          "temporeduktion*"
+        ]
+      },
+      {
+        "label": "Parkierung",
+        "weight": 10,
+        "terms": [
+          "parkplatz*",
+          "parkplätze*",
+          "parkierung*",
+          "blaue zone",
+          "parkhaus*"
+        ]
+      },
+      {
+        "label": "Verkehrsführung",
+        "weight": 10,
+        "terms": [
+          "lichtsignal*",
+          "verkehrsführung*",
+          "verkehrsberuhigung*",
+          "signalisation*",
+          "baustellenverkehr*"
+        ]
+      }
+    ],
+    "excludeTerms": [],
+    "commissionBonus": {
+      "names": [
+        "SK SID/V"
+      ],
+      "points": 15
+    },
+    "thresholds": {
+      "hit": 20,
+      "borderline": 10
+    },
+    "bodies": {
+      "261": true,
+      "ZH": true,
+      "CHE": true
+    }
+  }
+}

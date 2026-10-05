@@ -1,0 +1,77 @@
+{
+  "format": "polit-monitor-profile",
+  "schemaVersion": 1,
+  "hinweis": "Beispielprofil zum Ausprobieren und Anpassen. Laden über Einstellungen, «Profildatei laden». Stern am Ende = Wortanfang, mehrere Wörter = Phrase.",
+  "profile": {
+    "name": "Schulamt",
+    "orgTerms": [
+      "schulamt",
+      "schul- und sportdepartement"
+    ],
+    "orgBonus": 15,
+    "themes": [
+      {
+        "label": "Volksschule & Schulraum",
+        "weight": 10,
+        "terms": [
+          "volksschule*",
+          "schulhaus*",
+          "schulhäuser*",
+          "schulraum*",
+          "schulanlage*",
+          "klassengrösse*",
+          "lehrperson*"
+        ]
+      },
+      {
+        "label": "Tagesschule & Betreuung",
+        "weight": 10,
+        "terms": [
+          "tagesschule*",
+          "schulergänzende betreuung",
+          "hort*",
+          "mittagstisch*",
+          "tagesbetreuung*"
+        ]
+      },
+      {
+        "label": "Förderung & Integration",
+        "weight": 10,
+        "terms": [
+          "frühförderung*",
+          "deutsch als zweitsprache",
+          "integrative förderung",
+          "sonderschul*",
+          "schulsozialarbeit*"
+        ]
+      },
+      {
+        "label": "Kinderbetreuung im Vorschulalter",
+        "weight": 5,
+        "terms": [
+          "kita*",
+          "kindertagesstätte*",
+          "krippe*"
+        ]
+      }
+    ],
+    "excludeTerms": [
+      "fahrschule*"
+    ],
+    "commissionBonus": {
+      "names": [
+        "SK PRD/SSD"
+      ],
+      "points": 15
+    },
+    "thresholds": {
+      "hit": 20,
+      "borderline": 10
+    },
+    "bodies": {
+      "261": true,
+      "ZH": true,
+      "CHE": false
+    }
+  }
+}
